@@ -9,7 +9,7 @@
         "@schematics/angular:component": {
           "inlineTemplate": true,
           "inlineStyle": true,
-          "style": "sass",
+          "style": "css",
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -52,7 +52,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -105,6 +105,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-movies"
+    }
+  },
+  "defaultProject": "angular-movies",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
